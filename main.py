@@ -201,7 +201,7 @@ N_list=[]
 phi_f=Phi_Field(-10,1)
 
 #2. Read the initial concentration distribution of VO
-with open("N_d_51000", "r") as data:
+with open("N_d_0", "r") as data:
     lines = data.readlines()
 n_d = []
 for i in range(0,len(lines)):
@@ -229,7 +229,7 @@ for t in range(0,1000):
 #4. Print the output file
 with open("N_d","w") as f:
     for i in range(0,len(n_d)):
-        f.write(str(n_d[i]/32*1E16)+" "+"\n")
+        f.write(str(n_d[i])+" "+"\n")
 
 with open("N_list","w") as f:
     for i in range(0,len(N_list)):
@@ -237,7 +237,7 @@ with open("N_list","w") as f:
 
 with open("N_e","w") as f:
     for i in range(0,len(N_e)):
-        f.write(str(-N_e[i]/16*1E16)+" "+"\n")
+        f.write(str(-N_e[i])+" "+"\n")
 
 z= np.arange(0,N,1)
 plt.plot(z,cbm-poisson(N_e+n_d+N_i)+poisson(N_e)[N-1]-phi_f)
