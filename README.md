@@ -12,6 +12,6 @@ Four steps of input need to be adjusted during running.
    4.  Chose which output file to be printed.
 
 There are three main output files.
-The N_d file is the charge distribution file of VOs, whose unit is angstrom^-2.
-The N_e file is the charge distribution file of electrons, whose unit is angstrom^-2.
+The N_d file is the charge distribution file of VOs, whose unit is angstrom^-2.//
+The N_e file is the charge distribution file of electrons, whose unit is angstrom^-2.//
 The N_list file contains four columns of data, recording the total number of electrons in LAO, the total number of electrons in STO, the total number of VOs in LAO, and the total number of VOs in STO in each iteration.
