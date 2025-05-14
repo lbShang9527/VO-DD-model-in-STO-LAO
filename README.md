@@ -1,4 +1,10 @@
 # VO-DD-model-in-STO-LAO
 The Drift-Diffusion Modeling of Oxygen Vacancy Migration in STO/LAO. 
 
-The N_d file is the 
+The N_d_0 file is the initial VO distribution file, which is a balanced distribution under zero voltage.
+The dos file describes the relationship between the bottom electron concentration of the STO conduction band and the Fermi level.
+The main.py is the main program. Four steps of input need to be adjusted during running. 
+   1.  Set the bias voltage and position of the tip.
+   2.  Read the initial concentration distribution file of VO.
+   3.  Run the main iteration equation and set the number of steps.
+   4.  Chose which output file to be printed.
